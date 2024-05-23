@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ic_launcher_background">
+
+        <RelativeLayout
+            android:id="@+id/layoutToolBar"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icona" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/Display"
+        android:layout_below="@+id/ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:padding="13sp">
+
+        <TextView
+            android:id="@+id/titolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee_shade"
+            android:padding="15sp"
+            android:text="SMS Remote Commands"
+            android:textAlignment="center"
+            android:textColor="@color/arancione"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/NumPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:padding="15sp"
+            android:layout_below="@+id/titolo"
+            android:layout_marginTop="60dp"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:maxLength="10"
+            android:background="@android:drawable/editbox_background"/>
+
+        <EditText
+            android:id="@+id/Messaggio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NumPhone"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Enter Message"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLength="80"
+            android:padding="15sp" />
+
+        <Button
+            android:id="@+id/SendBotton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Messaggio"
+            android:layout_marginTop="40dp"
+            android:text="Send SMS"
+            android:textAllCaps="false"/>
+
+
+        <TextView
+            android:id="@+id/Comandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SendBotton"
+            android:layout_marginTop="49dp"
+            android:text="Comandi riconosciuti: scatta foto, riproduci musica, registra suono, invia foto. (e relativi comandi in inglese)" />
+
+        <TextView
+            android:id="@+id/Inventor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Comandi"
+            android:layout_marginTop="100dp"
+            android:text="Designed by Matteo Volpi"
+            android:textAlignment="center" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

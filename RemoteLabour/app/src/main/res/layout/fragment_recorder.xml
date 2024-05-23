@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".Recorder">
+
+    <TextView
+        android:id="@+id/TitoloFragRecorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/bangers"
+        android:text="RECORDER AUDIO"
+        android:textAlignment="center"
+        android:textColor="@color/blu"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/ImmagineRec"
+        android:layout_width="wrap_content"
+        android:layout_height="327dp"
+        android:layout_below="@+id/TitoloFragRecorder"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/rec" />
+
+</RelativeLayout>

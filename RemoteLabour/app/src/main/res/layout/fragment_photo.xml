@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Photo"
+    android:padding="13sp"
+    android:id="@+id/FragmentPhoto">
+
+
+        <TextView
+            android:id="@+id/TitoloFragPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SNAP AND SEND PHOTO"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/bangers"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/purple_700"
+            />
+
+        <ImageView
+            android:id="@+id/VistaImmagine"
+            android:layout_width="398dp"
+            android:layout_height="311dp"
+            android:layout_below="@+id/TitoloFragPhoto"
+            android:layout_marginTop="122dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/VistaImmagine"
+            android:layout_marginTop="164dp"
+            android:text="waiting for commands"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+</RelativeLayout>

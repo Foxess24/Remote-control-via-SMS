@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+       android:id="@+id/Home"
+        android:title="HOME"
+        android:icon="@drawable/outline_home_24"
+        />
+
+    <item
+        android:id="@+id/Foto"
+        android:title="Photo"
+        android:icon="@drawable/outline_photo_camera_24"
+        />
+
+    <item
+        android:id="@+id/PlaySound"
+        android:title="PlaySound"
+        android:icon="@drawable/outline_play_circle_outline_24"
+        />
+
+    <item
+        android:id="@+id/Registratore"
+        android:title="Recorder"
+        android:icon="@drawable/baseline_record_voice_over_24"
+        />
+
+</menu>

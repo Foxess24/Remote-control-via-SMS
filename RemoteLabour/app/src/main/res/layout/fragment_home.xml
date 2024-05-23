@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:padding="13sp">
+
+    <TextView
+        android:id="@+id/Titolo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/bungee_shade"
+        android:text="SMS REMOTE LABOUR"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/Comandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IconaHome"
+        android:layout_marginTop="8dp"
+        android:text="Comandi riconosciuti: "
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Comando1"
+        android:layout_below="@+id/Comandi"
+        android:layout_marginTop="20dp"
+        android:text="- Scatta ed Invia foto"
+        android:textSize="20sp"
+        android:textColor="@color/purple_700"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Comando2"
+        android:layout_below="@+id/Comando1"
+        android:layout_marginTop="20dp"
+        android:text="- Riproduci suono"
+        android:textSize="20sp"
+        android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Comando3"
+        android:layout_below="@+id/Comando2"
+        android:layout_marginTop="20dp"
+        android:text="- Registra"
+        android:textSize="20sp"
+        android:textColor="@color/blu"/>
+
+    <TextView
+        android:id="@+id/Attesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Comando3"
+        android:layout_marginTop="23dp"
+        android:text="...in attesa di comandi..."
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/IconaHome"
+        android:layout_width="wrap_content"
+        android:layout_height="251dp"
+        android:layout_below="@id/Titolo"
+        android:src="@drawable/icona"/>
+
+
+</RelativeLayout>
